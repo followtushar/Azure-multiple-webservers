@@ -52,8 +52,9 @@
     },
     "modulesUrl": {
       "type": "string",
+      "defaultValue": "https://github.com/followtushar/Azure-multiple-webservers/edit/master/"
       "metadata": {
-        "description": "URL for the DSC configuration module. NOTE: Can be a Github url(raw) to the zip file"
+        "description": "URL for the DSC configuration module."
       }
     },
     "configurationFunction": {
