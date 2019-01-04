@@ -343,11 +343,7 @@
             "ModulesUrl": "[parameters('modulesUrl')]",
             "ConfigurationFunction": "[parameters('configurationFunction')]",
             "Properties": {
-              "MachineName": "[concat(parameters('vmNamePrefix'), copyindex())]",
-              "copy": {
-                "name": "virtualMachineLoop",
-                "count": "[variables('numberOfInstances')]"
-              },
+              "MachineName": "[concat(parameters('vmNamePrefix'), copyindex())]"
             }
           },
           "protectedSettings": null
